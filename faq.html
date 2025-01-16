@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AppSpark - Часто Задаваемые Вопросы</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        color: white;
+        background: linear-gradient(to bottom, #341b47, #1f112b);
+      }
+
+      header {
+        background-color: #1f112b;
+        padding: 20px;
+        text-align: center;
+      }
+
+      header nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+      }
+
+      header nav ul li {
+        margin: 0 15px;
+      }
+
+      header nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1em;
+        transition: color 0.3s;
+      }
+
+      header nav ul li a:hover {
+        color: #ff4500;
+      }
+
+      section {
+        padding: 50px 20px;
+        text-align: center;
+      }
+
+      section h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+      }
+
+      .faq-list {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: left;
+      }
+
+      .faq-item {
+        margin-bottom: 20px;
+      }
+
+      .faq-item h3 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+        color: #ff4500;
+      }
+
+      .faq-item p {
+        font-size: 1em;
+        margin: 0;
+      }
+
+      footer {
+        background-color: #1f112b;
+        padding: 20px;
+        text-align: center;
+      }
+
+      footer nav ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+        margin: 10px 0 0;
+      }
+
+      footer nav ul li {
+        margin: 0 15px;
+      }
+
+      footer nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 0.9em;
+      }
+
+      footer nav ul li a:hover {
+        color: #ff4500;
+      }
+
+      .qr-codes {
+        display: none;
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      .qr-codes img {
+        max-width: 200px;
+        margin: 10px;
+      }
+
+      .toggle-button {
+        display: inline-block;
+        padding: 5px 10px;
+        background-color: #ff4500;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 0.9em;
+        transition: background-color 0.3s;
+        margin-left: 10px;
+      }
+
+      .toggle-button:hover {
+        background-color: #e03e00;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Хедер (Заголовок) -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/">Главная</a></li>
+          <li><a href="#">Часто Задаваемые Вопросы</a></li>
+          <li><a href="/#contact">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Часто Задаваемые Вопросы (FAQ Section) -->
+    <section>
+      <h2>Часто Задаваемые Вопросы</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <h3>Оплачивать до или после печати?</h3>
+          <p>
+            Oплачивать можно как до, так и после печати. QR-коды для оплаты:
+            <button class="toggle-button" onclick="toggleQrCodes()">
+              Показать QR-коды
+            </button>
+          </p>
+          <div class="qr-codes" id="qrCodes">
+            <img src="/images/qr1.png" alt="QR-код для оплаты 1" />
+            <img src="/images/qr2.png" alt="QR-код для оплаты 2" />
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h3>Как я могу распечатать материалы?</h3>
+          <p>
+            Если принтер свободен, то берете свой ноутбук или ноутбук друга,
+            подходите к принтеру, вставляете usb кабель в свое устройство и
+            печатаете, выбрав "hp 103 107 108" в настройках для печати.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Принтер сломался, что делать?</h3>
+          <p>Зовите человека, который разбирается в принтерах.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Какова стоимость печати?</h3>
+          <p>
+            4 рубля за страницу без вашей бумаги и 2 рубля, если приносите свою
+            бумагу.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Могу ли я распечатать меньше трёх страниц бесплатно?</h3>
+          <p>
+            Да, вы можете бесплатно распечатать до 3 страниц на нашей бумаге и
+            до 15 страниц на своей.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Где вас найти?</h3>
+          <p>Мы находимся по адресу: улица Радищева, 28.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Каковы сроки выполнения заказа?</h3>
+          <p>
+            В зависимости от объема заказа, от нескольких минут до часа. Партии
+            обсуждаются индивидуально.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Футер (Footer) -->
+    <footer>
+      <p>2025 AppSpark. Все Права Защищены.</p>
+      <nav>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="#">Часто Задаваемые Вопросы</a></li>
+          <li><a href="#contact">Контакты</a></li>
+        </ul>
+      </nav>
+    </footer>
+
+    <script>
+      function toggleQrCodes() {
+        const qrCodes = document.getElementById("qrCodes");
+        const button = document.querySelector(".toggle-button");
+
+        if (qrCodes.style.display === "none" || qrCodes.style.display === "") {
+          qrCodes.style.display = "block";
+          button.textContent = "Скрыть QR-коды";
+        } else {
+          qrCodes.style.display = "none";
+          button.textContent = "Показать QR-коды";
+        }
+      }
+    </script>
+  </body>
+</html>

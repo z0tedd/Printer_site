@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AppSpark - Разжигайте Свои Идеи</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        color: white;
+        background: linear-gradient(to bottom, #341b47, #1f112b);
+      }
+
+      header {
+        background-color: #1f112b;
+        padding: 20px;
+        text-align: center;
+      }
+
+      header nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+      }
+      header nav ul li {
+        margin: 0 15px;
+      }
+
+      header nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1em;
+        transition: color 0.3s;
+      }
+
+      header nav ul li a:hover {
+        color: #ff4500;
+      }
+
+      #hero {
+        text-align: center;
+        padding: 50px 20px;
+      }
+
+      #hero h1 {
+        font-size: 2.5em;
+        margin: 0 0 20px;
+      }
+
+      #hero p {
+        font-size: 1.2em;
+        margin-bottom: 30px;
+      }
+      .contact-info,
+      .projects p {
+        line-height: normal;
+      }
+
+      #hero button {
+        padding: 10px 20px;
+        font-size: 1em;
+        color: #fff;
+        background-color: #ff4500;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      #hero button:hover {
+        background-color: #e03d00;
+      }
+
+      #hero img {
+        margin-top: 30px;
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+
+      section {
+        padding: 50px 20px;
+        text-align: center;
+      }
+
+      section h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+      }
+
+      .stats,
+      .projects,
+      .services {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .stats div,
+      .projects div,
+      .services div {
+        text-align: center;
+        max-width: 300px;
+        margin: 20px;
+      }
+      p {
+        line-height: 50%;
+      }
+
+      .stats div span {
+        font-size: 2em;
+        color: #ff4500;
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      .services div h3,
+      .projects div h3 {
+        font-size: 1.2em;
+        margin: 10px 0;
+      }
+
+      .testimonials,
+      .contact-info {
+        background-color: #1f112b;
+        border-radius: 10px;
+        padding: 30px;
+      }
+
+      .contact-info p {
+        margin: 10px 0;
+        font-size: 1.1em;
+      }
+
+      footer {
+        background-color: #1f112b;
+        padding: 20px;
+        text-align: center;
+      }
+
+      footer nav ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+        margin: 10px 0 0;
+      }
+
+      footer nav ul li {
+        margin: 0 15px;
+      }
+
+      footer nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 0.9em;
+      }
+
+      footer nav ul li a:hover {
+        color: #ff4500;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Хедер (Заголовок) -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#about">О Нас</a></li>
+          <li><a href="#portfolio">Наши Работы</a></li>
+          <li><a href="#services">Услуги</a></li>
+          <li><a href="#contact">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Главный Экран (Hero Section) -->
+    <section id="hero">
+      <h1>Скоростная печать, которая меняет правила игры</h1>
+      <p>Превратите свою идею в успешную курсовую работу.</p>
+      <button onclick="window.location.href='faq.html'">
+        Распечатайте свой материал уже сейчас!
+      </button>
+      <!-- <img src="images/team.jpg" alt="Команда AppSpark" /> -->
+    </section>
+
+    <!-- О Нас (About Us) -->
+    <section id="about">
+      <h2>Становясь Лучшими в Разработке</h2>
+      <p>Краткое описание компании, миссии и целей.</p>
+      <div class="stats">
+        <div>
+          <span>10+</span>
+          <p>Лет Опыта</p>
+        </div>
+        <div>
+          <span>Дешевая печать</span>
+          <p>4 рубля, если у вас нет бумаги</p>
+          <p>2 рубля с вашей бумагой</p>
+        </div>
+        <div>
+          <span>Бесплатно</span>
+          <p>до 3 листов c бумагой</p>
+          <p>до 15, если принесли свою</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Наши Работы (Portfolio) -->
+    <section id="portfolio">
+      <h2>Проекты, которые Говорят Сами за Себя</h2>
+      <div class="projects">
+        <div>
+          <!-- <img src="images/project1.jpg" alt="Проект 1" /> -->
+          <h3>Единоразовая печать книги</h3>
+          <p>
+            Был распечатан полностью сборник задач по аналитической геометрии
+          </p>
+        </div>
+        <div>
+          <!-- <img src="images/project2.jpg" alt="Проект 2" /> -->
+          <h3>Мелкая партия журналов</h3>
+          <p>Партия из 5 штук одного замечательного сборника анекдотов.</p>
+        </div>
+        <div>
+          <!-- <img src="images/project3.jpg" alt="Проект 3" /> -->
+          <h3>Печать отчетных документов</h3>
+          <p>
+            Несколько листов, содержащие в себе билеты на поезд, проживание в
+            отеле.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Услуги (Services) -->
+    <section id="services">
+      <h2>Широкий Спектр Услуг для Всех Ваших Потребностей</h2>
+      <div class="services">
+        <div>
+          <h3>Печать</h3>
+          <p>4 рубля, если у вас нет бумаги</p>
+          <p>2 рубля с вашей бумагой</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Контакты (Contact Us) -->
+    <section id="contact">
+      <h2>Свяжитесь с Нами</h2>
+      <div class="contact-info">
+        <p>Адрес: улица Радищева, 28</p>
+        <p>Email: alkendius@yandex.ru</p>
+      </div>
+    </section>
+
+    <!-- Футер (Footer) -->
+    <footer>
+      <p>2025 AppSpark. Все Права Защищены.</p>
+      <nav>
+        <ul>
+          <li><a href="#about">О Нас</a></li>
+          <li><a href="#portfolio">Наши Работы</a></li>
+          <li><a href="#services">Услуги</a></li>
+          <li><a href="#contact">Контакты</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
